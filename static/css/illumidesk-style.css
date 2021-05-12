@@ -17,20 +17,20 @@
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
-#login-main .auth-form-header {
+#login-main .auth-form-header-ild {
     padding: 10px 20px;
     color: #fff;
     background: #6B913F;
     border-radius: 3px 3px 0 0;
 }
 
-.btn-jupyter {
+.btn-ild {
     color: #fff;
     background-color: #6B913F !important;
     border-color: #457A3B !important;
 }
 
-.btn-primary {
+.btn-primary-ild {
     color: #fff;
     background-color: #6B913F;
     border-color: #457A3B;

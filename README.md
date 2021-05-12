@@ -14,7 +14,11 @@ Basic UI customization for the JupyterHub.
 
 3. Update the JupyterHub configruation file so that the `template_paths` config has the correct location for the custom templates provided in this repo.
 
-**NOTE**: the `jupyterhub_config.py` provided in this repo uses the standard `/usr/local/share/jupyterhub/...` location. If you installed the JupyterHub in your virtual environment then these locations are available in the `/path/to/venv/share/jupyterhub/...`.
+> **NOTE**: the `jupyterhub_config.py` provided in this repo uses the standard `/usr/local/share/jupyterhub/...` location. If you installed the JupyterHub in your virtual environment then these locations are available in the `/path/to/venv/share/jupyterhub/...`.
+
+4. Copy the custom CSS file to your JupyterHub css location. For example, if you installed the JupyterHub in your `virtualenv` then the location is most likely `/path/to/venv/share/jupyterhub/static/css/`.
+
+> **TIP**: on Linux / MacOS systems, you can find the location of the CSS with `find $HOME/jhubui -iname style.min.css`.
 
 Start JupyterHub with the example configuration file:
 

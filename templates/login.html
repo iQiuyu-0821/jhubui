@@ -15,13 +15,13 @@
 {{ custom_html | safe }}
 {% elif login_service %}
 <div class="service-login">
-  <a role="button" class='btn btn-illumidesk btn-lg' href='{{authenticator_login_url}}'>
+  <a role="button" class='btn btn-ild btn-lg' href='{{authenticator_login_url}}'>
     Sign in with {{login_service}}
   </a>
 </div>
 {% else %}
 <form action="{{login_url}}?next={{next}}" method="post" role="form">
-  <div class="auth-form-header">
+  <div class="auth-form-header-ild">
     Sign in
   </div>
   <div class='auth-form-body'>
@@ -61,7 +61,7 @@
       <input
         id="login_submit"
         type="submit"
-        class='btn btn-primary'
+        class='btn btn-primary-ild'
         value='Sign in'
         tabindex="3"
         />
