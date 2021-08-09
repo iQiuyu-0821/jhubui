@@ -40,10 +40,10 @@ jupyterhub:
         args:
           - clone
           - --single-branch
-          - --branch=master
+          - --branch=main
           - --depth=1
           - --
-          - https://github.com/illumidesk/k8s-jhub-ui.git
+          - https://github.com/illumidesk/jhubui.git
           - /etc/jupyterhub/custom
         securityContext:
           runAsUser: 0
@@ -59,7 +59,7 @@ jupyterhub:
 
     extraConfig:
       templates: |
-        c.JupyterHub.template_paths = ['/etc/jupyterhub/custom/jupyterhub/templates']
+        c.JupyterHub.template_paths = ['/etc/jupyterhub/custom/templates']
 ```
 
 Lemon squeezy ;-)
